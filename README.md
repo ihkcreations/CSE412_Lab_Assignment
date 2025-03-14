@@ -1,5 +1,5 @@
 # Repository Details:
-## CSE475
+## CSE412
 This repository contains all the assignments submissions of the course CSE412 (Software Engineering) <br>
 Spring 2025<br>
 **Sec:** 01<br>
