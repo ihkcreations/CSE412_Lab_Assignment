@@ -1,0 +1,93 @@
+.login-section {
+    padding: 50px 0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+}
+
+.login-container label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0 10px 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container .btn {
+  width: 100%;
+  background-color: #007bff;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+.login-container .btn a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.login-container .forgot-pass{
+  margin-top: 10px;
+  text-decoration: none;
+    color: #007bff;
+}
+
+.login-container .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Dark Mode */
+body.dark-mode .login-container {
+    background-color: #3b56a1;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .form-group input{
+    border: 0px solid #5b6ea0;
+  }
+  
+  body.dark-mode .form-group input,
+  body.dark-mode .form-group textarea {
+    background-color: #30457a;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .login-container .forgot-pass {
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  body.dark-mode .login-container .forgot-pass:hover {
+    color: #007bff;
+  }
+
+
