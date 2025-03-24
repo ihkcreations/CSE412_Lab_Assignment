@@ -1,0 +1,321 @@
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #0073e6, #00b8d4);
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.logout-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}
+
+/* Profile Section */
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.profile-container h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Portfolio Form */
+.portfolio-container {
+    width: 70%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.portfolio-container a{
+    margin-top: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: #218838;
+    border-radius: 25px;
+}
+
+.portfolio-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-top: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0073e6;
+    background-color: #fff;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-container {
+        width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+fieldset {
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0073e6;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 12px 0 12px 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0073e6;
+    background-color: #fff;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label input[type="radio"] {
+    transform: scale(1.1);
+}
+
+fieldset input::placeholder,
+fieldset textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Radio Buttons Styling */
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+fieldset label:hover {
+    color: #0073e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1.1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+/* Academic Background Section */
+#academicSection {
+    margin-top: 15px;
+}
+
+.academic-entry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.academic-entry input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.add-btn, .remove-btn {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.remove-btn {
+    background: #e63946;
+}
+
+.add-btn:hover {
+    background: #005bb5;
+}
+
+.remove-btn:hover {
+    background: #b22222;
+}
+

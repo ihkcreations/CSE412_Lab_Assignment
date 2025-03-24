@@ -1,0 +1,122 @@
+/* Registration Page Styling */
+.registration-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.registration-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.registration-container .form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.registration-container .form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.registration-container .btn {
+  width: 100%;
+  background-color: #007bff;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+.registration-container .btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.registration-container .form-group input,
+.registration-container .form-group textarea {
+  width: 100%;
+  padding: 10px 0 10px 0px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-container .form-group input[type="file"] {
+  border: none;
+
+}
+
+
+.registration-container button {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.registration-container button:hover {
+  background: #218838;
+}
+
+.registration-container small {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .registration-container {
+    width: 80%;
+  }
+}
+
+body.dark-mode .registration-container {
+  background-color: #3b56a1;
+  color: #ffffff;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: #3b56a1;
+  color: #ffffff;
+}
+/* change placeholder color in dark mode*/
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+  color: #6e8ae7;
+}
+
+body.dark-mode .form-group input[type="file"] {
+  background-color: #3b56a1;
+  color: #ffffff;
+}
+
+body.dark-mode .registration-container button {
+  background-color: #007bff;
+}
+
+body.dark-mode .registration-container button:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .registration-container small {
+  color: #ccc;
+}
